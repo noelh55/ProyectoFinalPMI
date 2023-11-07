@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:textAlignment="center"
+    android:orientation="horizontal"
+    tools:context=".ActivityBuscarU">
+
+    <!-- Menú (izquierdo) -->
+    <LinearLayout
+        android:id="@+id/menuLayout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/colormenubackground"
+        android:visibility="visible"
+        android:orientation="vertical">
+        <!-- Agrega elementos del menú aquí -->
+    </LinearLayout>
+
+    <!-- Contenido principal -->
+    <FrameLayout
+        android:id="@+id/mainContent"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3">
+        <!-- Agrega el contenido principal aquí -->
+        <Button
+            android:id="@+id/toggleMenuButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button" />
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="40dp"
+        android:layout_height="47dp"
+        app:srcCompat="@android:drawable/ic_menu_search"
+        tools:layout_editor_absoluteX="98dp"
+        tools:layout_editor_absoluteY="7dp" />
+
+    <EditText
+        android:id="@+id/searchEditText"
+        android:layout_width="238dp"
+        android:layout_height="53dp"
+        android:hint="Buscar Usuarios"
+        android:inputType="text"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="147dp" />
+
+    <ListView
+        android:layout_width="320dp"
+        android:layout_height="647dp"
+        tools:layout_editor_absoluteX="92dp"
+        tools:layout_editor_absoluteY="83dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
