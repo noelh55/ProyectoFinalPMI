@@ -7,7 +7,7 @@
     android:background="@drawable/back"
     android:textAlignment="center"
     android:orientation="horizontal"
-    tools:context=".ActivityBuscarU">
+    tools:context=".ActivityBuscarx">
 
     <ImageView
         android:id="@+id/imageView"
@@ -21,7 +21,7 @@
         android:id="@+id/searchEditText"
         android:layout_width="238dp"
         android:layout_height="53dp"
-        android:hint="Buscar Usuarios"
+        android:hint="Buscar X"
         android:inputType="text"
         android:textColor="#FFFFFF"
         android:textSize="16sp"
