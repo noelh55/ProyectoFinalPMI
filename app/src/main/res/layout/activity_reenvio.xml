@@ -7,7 +7,7 @@
     android:background="@drawable/back"
     android:orientation="vertical"
     android:textAlignment="center"
-    tools:context=".ActivityReenvio">
+    tools:context=".principal.ActivityReenvio">
 
     <TextView
         android:id="@+id/textView1"

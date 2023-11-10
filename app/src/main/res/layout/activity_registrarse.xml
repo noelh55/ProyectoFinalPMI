@@ -13,7 +13,7 @@
         android:id="@+id/textView13"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="60dp"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
         android:textAlignment="center"
@@ -26,7 +26,7 @@
         android:id="@+id/textView9"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="40dp"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
         android:layout_marginStart="10dp"
@@ -163,29 +163,6 @@
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
         android:inputType="date" />
-
-    <TextView
-        android:id="@+id/textView15"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="#FFFFFF"
-        android:layout_marginTop="5dp"
-        android:textSize="20sp"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
-        android:textStyle="bold"
-        android:text="Contraseña:" />
-    <EditText
-        android:id="@+id/AredtPassword"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:textSize="20sp"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
-        android:inputType="textPassword" />
-
-
     <Button
         android:id="@+id/btnARegistrarse"
         android:layout_width="match_parent"
@@ -198,8 +175,6 @@
         android:textSize="20sp"
         android:textStyle="bold"
         android:text="Registrarse" />
-
-
 
 
 </LinearLayout>
