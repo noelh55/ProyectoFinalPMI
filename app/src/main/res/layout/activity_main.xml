@@ -23,38 +23,38 @@
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_marginTop="70dp"
-        android:layout_width="match_parent"
+        android:layout_width="265dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="70dp"
+        android:text="Usuario:"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
-        android:textStyle="bold"
-        android:text="Usuario:" />
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/edtUsuario"
-        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
         android:ems="10"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
         android:inputType="text"
-        android:text="" />
+        android:text=""
+        android:textColor="#FBFAFA" />
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="match_parent"
+        android:layout_width="265dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:text="Contraseña"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="10dp"
-        android:textStyle="bold"
-        android:layout_marginEnd="10dp"
-        android:text="Contraseña" />
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/edtPassword"
@@ -62,8 +62,9 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:layout_marginTop="10dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:textColor="#FBFAFA"
         />
 
     <Button
@@ -74,6 +75,7 @@
         android:layout_marginTop="40dp"
         android:layout_marginEnd="40dp"
         android:textColor="@color/black"
+
         android:backgroundTint="@color/white"
         android:textSize="20sp"
         android:textStyle="bold"
