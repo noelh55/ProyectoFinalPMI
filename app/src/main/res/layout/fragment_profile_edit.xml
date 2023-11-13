@@ -180,7 +180,7 @@
         </LinearLayout>
 
         <Button
-            android:id="@+id/string"
+            android:id="@+id/btnGuardarEdit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
@@ -211,13 +211,5 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
-    <TextView
-        android:id="@+id/textEdit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        app:layout_constraintEnd_toStartOf="@+id/imgEdit"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="91dp"
-        tools:ignore="MissingConstraints" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

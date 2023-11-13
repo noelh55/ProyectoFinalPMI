@@ -28,8 +28,6 @@ public class GroupsFragment extends Fragment {
         binding = FragmentGroupsBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textGrupos;
-        homeViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
 
         btnCrearGrupo = root.findViewById(R.id.btnCreargrupo);
         btnCrearGrupo.setOnClickListener(new View.OnClickListener() {

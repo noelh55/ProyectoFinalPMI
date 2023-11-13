@@ -71,14 +71,6 @@
                 android:text="Adjuntar archivo." />
         </LinearLayout>
 
-        <TextView
-            android:id="@+id/textmenssages"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text=""
-            tools:layout_editor_absoluteX="26dp"
-            tools:layout_editor_absoluteY="57dp"
-            tools:ignore="MissingConstraints" />
 
 
 

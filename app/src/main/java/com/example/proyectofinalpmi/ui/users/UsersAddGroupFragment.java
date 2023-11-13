@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -20,6 +21,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 public class UsersAddGroupFragment extends Fragment {
 
     private FragmentAddusersgroupsBinding binding;
+    private Button btnAgregaraGrupo;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -28,9 +30,13 @@ public class UsersAddGroupFragment extends Fragment {
 
         binding = FragmentAddusersgroupsBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
+        btnAgregaraGrupo =  root.findViewById(R.id.btnAgregarUGrupo);
+        btnAgregaraGrupo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
 
-        final TextView textView = binding.textuseraddg;
-        galleryViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+            }
+        });
 
         return root;
     }

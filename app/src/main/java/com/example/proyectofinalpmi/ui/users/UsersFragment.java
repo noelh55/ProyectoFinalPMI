@@ -16,36 +16,45 @@ import com.example.proyectofinalpmi.databinding.FragmentProfileBinding;
 import com.example.proyectofinalpmi.databinding.FragmentUsersBinding;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
-public class UsersFragment extends Fragment {
 
-    private FragmentUsersBinding binding;
-    private FloatingActionButton btnAgregarUsuario;
+    public class UsersFragment extends Fragment {
 
-    public View onCreateView(@NonNull LayoutInflater inflater,
-                             ViewGroup container, Bundle savedInstanceState) {
-        UsersViewModel galleryViewModel =
-                new ViewModelProvider(this).get(UsersViewModel.class);
+        private FragmentUsersBinding binding;
+        private FloatingActionButton btnAgregarUsuario, btnBuscar;
 
-        binding = FragmentUsersBinding.inflate(inflater, container, false);
-        View root = binding.getRoot();
+        public View onCreateView(@NonNull LayoutInflater inflater,
+                                 ViewGroup container, Bundle savedInstanceState) {
+            UsersViewModel usersViewModel =
+                    new ViewModelProvider(this).get(UsersViewModel.class);
 
-        final TextView textView = binding.textuser;
-        galleryViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+            binding = FragmentUsersBinding.inflate(inflater, container, false);
+            View root = binding.getRoot();
 
-        btnAgregarUsuario = root.findViewById(R.id.btnAgregarUsuario);
-        btnAgregarUsuario.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                // Inicia la navegación hacia el fragment ProfileFragment
-                Navigation.findNavController(view).navigate(R.id.action_nav_users_to_nav_usersadd);
-            }
-        });
-        return root;
+            // Haciendo referencia a los botones
+            btnAgregarUsuario = root.findViewById(R.id.btnAgregarUsuario);
+            btnBuscar = root.findViewById(R.id.btnBuscarUsuario);
+
+            btnAgregarUsuario.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    // Inicia la navegación hacia el fragment ProfileFragment
+                    Navigation.findNavController(view).navigate(R.id.action_nav_users_to_nav_usersadd);
+                }
+            });
+
+            btnBuscar.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    // Agrega el código para el botón de búsqueda aquí
+                }
+            });
+
+            return root;
+        }
+
+        @Override
+        public void onDestroyView() {
+            super.onDestroyView();
+            binding = null;
+        }
     }
-
-    @Override
-    public void onDestroyView() {
-        super.onDestroyView();
-        binding = null;
-    }
-}
