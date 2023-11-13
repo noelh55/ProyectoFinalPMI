@@ -16,7 +16,6 @@
             android:layout_height="492dp"
             android:layout_marginTop="40dp"
             app:layout_constraintStart_toStartOf="parent"
-
             app:layout_constraintTop_toBottomOf="@+id/btnBuscar"
             tools:ignore="MissingConstraints" />
 
@@ -24,20 +23,22 @@
         <com.google.android.material.floatingactionbutton.FloatingActionButton
 
             android:id="@+id/btnBuscar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="36dp"
+            android:layout_height="43dp"
             android:layout_marginStart="24dp"
+            android:layout_marginTop="10dp"
             android:clickable="true"
-            android:src="@android:drawable/ic_menu_search"
+            android:foreground="@android:drawable/ic_menu_search"
             android:text="Buscar"
             app:layout_constraintStart_toStartOf="parent"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteY="16dp" />
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
 
         <EditText
             android:id="@+id/edtBuscar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
             android:backgroundTint="#00897B"
             android:ems="10"
             android:hint="Buscar"
@@ -79,15 +80,15 @@
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/btnAgregarUsuario"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="48dp"
+            android:layout_height="47dp"
             android:clickable="true"
             android:src="@drawable/ic_launcher_addperson"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.465"
             app:layout_constraintStart_toEndOf="@+id/edtBuscar"
-            tools:layout_editor_absoluteY="20dp"
-            tools:ignore="MissingConstraints" />
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="29dp" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

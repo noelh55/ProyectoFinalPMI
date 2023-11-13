@@ -24,13 +24,15 @@
         <com.google.android.material.floatingactionbutton.FloatingActionButton
 
             android:id="@+id/btnBuscar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="36dp"
+            android:layout_height="43dp"
             android:layout_marginStart="24dp"
+            android:layout_marginTop="30dp"
             android:clickable="true"
-            android:src="@android:drawable/ic_menu_search"
+            android:foreground="@android:drawable/ic_menu_search"
             android:text="Buscar"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteY="16dp" />
 

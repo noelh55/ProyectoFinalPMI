@@ -77,4 +77,14 @@
     <string name="menu_home">Inicio</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+    <string-array name="country_array">
+        <item>Ingeneniería en computación</item>
+        <item>Ingeniería en Electrónica</item>
+        <item>Ingeniería en Producción Industrial</item>
+        <item>Licenciatura en Marketing</item>
+        <item>Licenciatura en Turismo</item>
+        <item>Licenciatura en Derecho</item>
+        <item>Licenciatura en Gerencia de Negocios</item>
+        <item>Licenciatura en Psicología</item>
+    </string-array>
 </resources>
