@@ -32,6 +32,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <provider
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:authorities="com.example.proyectofinalpmi.firebaseinitprovider"
+            android:exported="false"
+            android:initOrder="100" />
+
+
+
     </application>
 
 </manifest>
