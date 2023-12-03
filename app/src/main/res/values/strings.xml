@@ -2,4 +2,10 @@
 <resources>
     <string name="select_theme">Selecciona un tema</string>
     <string name="app_name" />
+    <string name="hello_blank_fragment">Nuestra aplicacion nos permite
+    \nla creación de grupo a partir de \nla lista de correo de estudiantes
+    \npermitiendonos enviar un\narchivo,imagen o video, etc.</string>
+    <string name="info_acerca_de">Bienvenidos</string>
+    <string name="fragment4">¿Aun  no te queda claro como\nfunciona nuestra aplicacion?
+    \nno te preocupes, puedes ver\nnuestro informe y asi sabras\ncomo se usa nuestra aplicacion.</string>
 </resources>

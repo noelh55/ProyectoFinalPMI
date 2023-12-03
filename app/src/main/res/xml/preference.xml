@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/xml/preferences.xml -->
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="AJUSTES">
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="VISUALIZACION">
+        <ListPreference
+            android:key="theme_preference"
+            android:title="Perfil"
+            android:summary="Ver perfil"
+            android:icon="@mipmap/ic_usuario"
+            android:clickable="true"
+            android:defaultValue="false"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="PERSONALIZAR">
+    <ListPreference
+        android:key="theme_preference"
+        android:title="Cambiar tema"
+        android:summary="Activar o desactivar el tema oscuro"
+        android:icon="@mipmap/ic_tema"
+        android:clickable="true"
+        android:defaultValue="false"/>
+
+        <Preference
+            android:title="Idioma"
+            android:summary="Cambiarle el idioma a la aplicación"
+            android:icon="@mipmap/ic_idioma"
+            android:clickable="true"
+            android:key="about_preference"
+            android:targetPackage="hn.uth.appsettings"
+            android:targetClass = "hn.uth.appsettings.Activity_language_picker"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="INFORMACIÓN">
+        <Preference
+            android:title="Acerca de"
+            android:summary="Información sobre la aplicación"
+            android:icon="@mipmap/ic_juego"
+            android:clickable="true"
+            android:key="about_preference"/>
+
+        <Preference
+            android:title="Creadores"
+            android:summary="Información de los creadores de la aplicación"
+            android:icon="@mipmap/ic_creadores"
+            android:clickable="true"
+            android:key="about_preference"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="CIERRE">
+        <Preference
+            android:title="Cerrar Sesion"
+            android:icon="@mipmap/ic_logout"
+            android:clickable="true"
+            android:key="about_preference"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>
+

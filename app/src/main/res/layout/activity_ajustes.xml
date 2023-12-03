@@ -1,29 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- res/layout/activity_ajustes.xml -->
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp"
     tools:context=".AjustesActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Seleccionar tema" />
-
-    <Spinner
-        android:id="@+id/themeSpinner"
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:entries="@array/themes"
-        android:prompt="@string/select_theme" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Guardar"
-        android:onClick="guardarAjustes" />
+        android:layout_height="match_parent"
+        android:id="@+id/contenedorAjuste">
+    </FrameLayout>
 </LinearLayout>
